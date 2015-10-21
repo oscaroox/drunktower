@@ -1,0 +1,27 @@
+nav.navbar.navbar-transparent
+	.container
+		.navbar-header
+			button.navbar-toggle.collapsed(data-toggle="collapse" data-target="#navbarToggle")
+				span.sr-only Toggle navigation
+				span.icon-bar
+				span.icon-bar
+				span.icon-bar
+			a.navbar-brand(href="#") Brand 
+		.collapse.navbar-collapse(id="navbarToggle")
+			ul.nav.navbar-nav
+				li.active
+					a(href="#") Link
+						span.sr-only (current)
+				li
+					a(href="#") Link
+				li.dropdown
+					a.dropdown-toggle(href="#" data-toggle="dropdown") dropdown
+						span.caret
+					ul.dropdown-menu
+						li
+							a(href="#") Action
+						li  
+							a(href="#") Another action
+	.container.text-center
+		img(src="http://lorempixel.com/300/250", alt="")
+		h1 Hello, World

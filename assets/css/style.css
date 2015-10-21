@@ -1,0 +1,8 @@
+.header-wrapper {
+	min-height: 400px;
+	background-color:#F44336;
+	border-top:5px solid #D32F2F;
+}
+.navbar-inner {
+    background:transparent;
+}

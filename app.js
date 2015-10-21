@@ -1,15 +1,13 @@
-var express = require('express');
-var app = express();
-var bodyParser = require("body-parser");
+var express = require('express'),
+	app 	= express(),
+	morgan	= require('morgan'),
+	path	= require('path');
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
-
-app.get("/", function(req, res, next) {
-	res.send("test")
+app.set('view engine', 'jade');
+app.set('views', path.join( __dirname + '/views'));
+app.use(express.static(path.join(__dirname + '/assets')));
+app.get('/', function(req, res) {
+	res.render('index', {title:'hello'});
 });
 
-app.listen(1337)
-
-
-
+app.listen(9000);
